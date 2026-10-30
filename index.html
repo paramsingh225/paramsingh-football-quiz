@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html lang="en"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>Do You Know Paramsingh?</title> <link rel="stylesheet" href="style.css"> </head>
+
+<body>
+    <div class="floating-ball" style="left:10%; animation-delay:0s;">⚽</div>
+<div class="floating-ball" style="left:80%; animation-delay:3s;">⚽</div>
+<div class="floating-ball" style="left:45%; animation-delay:5s;">⚽</div>
+
+
+<header>
+    <h1>⚽ THE PARAMSINGH QUIZ ⚽</h1>
+    <p>Do you REALLY know me?</p>
+</header>
+
+<section class="hero">
+    <h2>HOW WELL DO YOU KNOW MY FOOTBALL TASTE?</h2>
+    <p>Only true football fans can pass this test.</p>
+    <button onclick="startQuiz()">START THE CHALLENGE ⚡</button>
+</section>
+
+<main id="quiz" class="quiz-container" style="display:none;">
+
+    <div class="progress">
+        <span id="questionNumber">Question 1 / 5</span>
+    </div>
+
+    <h2 id="question">Question goes here</h2>
+
+    <div id="options" class="options"></div>
+
+    <p id="feedback"></p>
+
+    <button id="nextButton" onclick="nextQuestion()" style="display:none;">
+        NEXT QUESTION →
+    </button>
+
+</main>
+
+<section id="result" class="result" style="display:none;">
+    <h1 id="resultTitle"></h1>
+    <h2 id="score"></h2>
+    <p id="resultMessage"></p>
+    <button onclick="restartQuiz()">PLAY AGAIN 🔄</button>
+</section>
+
+<footer>
+    <p>Made for true football lovers ⚽</p>
+    <p>PARAMSINGH EDITION | 2026</p>
+</footer>
+
+<script src="script.js"></script>
+
+
+</body> </html>
